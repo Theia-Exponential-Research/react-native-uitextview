@@ -3,6 +3,7 @@
 @interface RCT_EXTERN_MODULE(RNUITextViewManager, RCTViewManager)
 RCT_REMAP_SHADOW_PROPERTY(numberOfLines, numberOfLines, NSInteger)
 RCT_REMAP_SHADOW_PROPERTY(allowsFontScaling, allowsFontScaling, BOOL)
+RCT_REMAP_SHADOW_PROPERTY(textAlign, textAlign, NSString)
 
 RCT_EXPORT_VIEW_PROPERTY(numberOfLines, NSInteger)
 RCT_EXPORT_VIEW_PROPERTY(onTextLayout, RCTDirectEventBlock)

@@ -15,6 +15,7 @@ class RNUITextViewChildShadow: RCTShadowView {
   @objc var textDecorationStyle: String = "solid"
   @objc var textDecorationColor: UIColor = .black
   @objc var backgroundColor: UIColor?
+  @objc var textAlign: String = "left"
 
   override func isYogaLeafNode() -> Bool {
     return true
@@ -56,6 +57,23 @@ class RNUITextViewChildShadow: RCTShadowView {
       return .heavy
     default:
       return .regular
+    }
+  }
+
+  func getTextAlign() -> NSTextAlignment {
+    switch self.textAlign {
+      case "left":
+        return .left
+      case "right":
+        return .right
+      case "center":
+        return .center
+      case "justify":
+        return .justified
+      case "auto":
+        return .natural
+      default:
+        return .left
     }
   }
   

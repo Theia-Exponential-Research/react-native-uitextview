@@ -17,6 +17,11 @@ class RNUITextView: UIView, UIGestureRecognizerDelegate {
       textView.textContainer.lineBreakMode = self.getLineBreakMode()
     }
   }
+  @objc var textAlign: String = "left" {
+    didSet {
+      textView.textAlignment = self.getTextAlign()
+    }
+  }
   @objc var onTextLayout: RCTDirectEventBlock?
 
   init(bridge: RCTBridge) {
@@ -69,6 +74,23 @@ class RNUITextView: UIView, UIGestureRecognizerDelegate {
   override func reactSetFrame(_ frame: CGRect) {
     UIView.performWithoutAnimation {
       super.reactSetFrame(frame)
+    }
+  }
+
+  func getTextAlign() -> NSTextAlignment {
+    switch self.textAlign {
+      case "left":
+        return .left
+      case "right":
+        return .right
+      case "center":
+        return .center
+      case "justify":
+        return .justified
+      case "auto":
+        return .natural
+      default:
+        return .left
     }
   }
 

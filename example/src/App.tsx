@@ -384,6 +384,58 @@ export default function App() {
             </Text>
           </View>
 
+          <View>
+            <RNText style={styles.subheader}>Base, textAlign</RNText>
+            <RNText style={[styles.text, {textAlign: 'left'}]}>
+              This is a left aligned text
+            </RNText>
+            <RNText style={[styles.text, {textAlign: 'center'}]}>
+              This is a center aligned text
+            </RNText>
+            <RNText style={[styles.text, {textAlign: 'right'}]}>
+              This is a right aligned text
+            </RNText>
+            <RNText style={[styles.text, {textAlign: 'justify'}]}>
+              This is a justify aligned text
+            </RNText>
+            <RNText style={[styles.text, {textAlign: 'auto'}]}>
+              This is a auto aligned text
+            </RNText>
+          </View>
+          <View>
+            <RNText style={styles.subheader}>UITextView, textAlign</RNText>
+            <Text
+              style={[styles.text, {textAlign: 'left'}]}
+              selectable
+              uiTextView>
+              This is a left aligned text
+            </Text>
+            <Text
+              style={[styles.text, {textAlign: 'center'}]}
+              selectable
+              uiTextView>
+              This is a center aligned text
+            </Text>
+            <Text
+              style={[styles.text, {textAlign: 'right'}]}
+              selectable
+              uiTextView>
+              This is a right aligned text
+            </Text>
+            <Text
+              style={[styles.text, {textAlign: 'justify'}]}
+              selectable
+              uiTextView>
+              This is a justify aligned text
+            </Text>
+            <Text
+              style={[styles.text, {textAlign: 'auto'}]}
+              selectable
+              uiTextView>
+              This is a auto aligned text
+            </Text>
+          </View>
+
           <RNText style={styles.header}>numberOfLines, ellipsizeMode</RNText>
 
           <View>

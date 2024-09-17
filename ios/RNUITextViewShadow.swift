@@ -8,6 +8,11 @@ class RNUITextViewShadow: RCTShadowView {
     }
   }
   @objc var allowsFontScaling: Bool = true
+  @objc var textAlign: String = "left" {
+      didSet {
+          self.dirtyLayout()
+      }
+  }
 
   var attributedText: NSAttributedString = NSAttributedString()
   var frameSize: CGSize = CGSize()
@@ -70,6 +75,7 @@ class RNUITextViewShadow: RCTShadowView {
         return
       }
       textView.setText(string: self.attributedText, size: self.frameSize, numberOfLines: self.numberOfLines)
+      textView.textAlign = self.textAlign
     }
   }
 
