@@ -38,14 +38,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bluesky-social/react-native-uitextview.git"
+    "url": "git+https://github.com/Theia-Exponential-Research/react-native-uitextview.git"
   },
-  "author": "Hailey <me@haileyok.com> (https://github.com/haileyok)",
+  "author": "Rodrigo Cibils <11689014+rodcibils@users.noreply.github.com> (https://github.com/rodcibils)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bluesky-social/react-native-uitextview/issues"
+    "url": "https://github.com/Theia-Exponential-Research/react-native-uitextview/issues"
   },
-  "homepage": "https://github.com/bluesky-social/react-native-uitextview#readme",
+  "homepage": "https://github.com/Theia-Exponential-Research/react-native-uitextview#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
